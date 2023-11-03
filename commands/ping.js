@@ -6,6 +6,7 @@ module.exports = {
         .setDescription('This is a slash command'),
 
     async execute(interaction) {
+        console.log("test")
         await interaction.reply("pong");
     },
 };
