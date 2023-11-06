@@ -10,3 +10,4 @@ module.exports = {
         await interaction.reply("pong");
     },
 };
+//dette er en command som skal sende en gif når man skriver "/Ping" og den svarer pong
