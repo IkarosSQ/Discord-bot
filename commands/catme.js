@@ -23,4 +23,4 @@ module.exports = {
         await interaction.reply();
     },
 };
-//dette er en command som i teorien skal sende en gif når man skriver "/catme"
+//dette er en command som i teorien skal sende en random gif når man skriver "/catme"
