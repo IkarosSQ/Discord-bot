@@ -14,7 +14,7 @@ const links2 = [L1, L2, L3, L4, L5, L6, L7, L8, L9, L0];
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('catme')
+        .setName('dogme')
         .setDescription('This is a slash command'),
 
     async execute(interaction) {
