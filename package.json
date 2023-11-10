@@ -11,6 +11,9 @@
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
     "fs": "^0.0.1-security",
-    "nodemon": "^2.0.21"
+    "nodemon": "^2.0.21",
+    "sequelize": "^6.34.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.6"
   }
 }

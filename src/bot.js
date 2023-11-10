@@ -4,6 +4,8 @@ require("dotenv").config(); // For most purposes this will work
 
 const fs = require("fs");
 const { Collection, Client, GatewayIntentBits } = require('discord.js');
+const sequelize = require("../db");
+const Users = require("../models/users");
 
 
 
@@ -47,6 +49,15 @@ for (const file of eventFiles) { //Takes every event file and registers it with 
 
 bot.on("ready", async () => {
     console.log(`>>>>${bot.user.username} has logged in`)
+    sequelize.sync()
+    .then(() => {
+        console.log('Tables created successfully!')
+    })
+    .catch((error) => {
+        console.error('Error creating tables:', error)
+    })
+    Users.init(sequelize)
+    Users.sync()
 })
 
 
