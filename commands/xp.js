@@ -15,11 +15,11 @@ module.exports = {
             .setColor(0x3bed09)
             .setTitle('this is your xp')
             .addFields(
-                { name: 'here is your xp'},
+                { name: '\u200B', value: '\u200B' },
                 { name: 'your current xp amount', value: currentxp.toString(), inline: true },
                 { name: 'your current level', value: level.toString(), inline: true },
+                { name: 'This is your xp to level up', value: xptolevelup.toString(), inline: true }
             )
-            .addFields({ name: 'This is your xp to level up', value: xptolevelup.toString(), inline: true })
             .setTimestamp()
         await interaction.reply({ embeds: [exampleEmbed] });
         

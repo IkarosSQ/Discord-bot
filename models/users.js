@@ -18,6 +18,7 @@ module.exports = class Users extends Model {
             xptolevelup: {
                 type:  DataTypes.STRING 
             }
+
         },
         {
             tableName: "Users",
