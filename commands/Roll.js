@@ -22,7 +22,7 @@ module.exports = {
             .addFields(
                 { name: ' ', value: rolledNumber.toString(), size: 12, inline: true },
             )
-            .setTimestamp()
+
         await interaction.reply({ embeds: [yesEmbed] });
 
     },
