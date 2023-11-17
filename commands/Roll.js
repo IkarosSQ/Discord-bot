@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require("discord.js");
-
+const { EmbedBuilder } = require("discord.js")
 
 const onetoonehundred = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 function getRandomArbitrary(min, max) {
@@ -13,9 +13,18 @@ module.exports = {
 
         
     async execute(interaction) {
+
         console.log("test")
         const rolledNumber = getRandomArbitrary(1, 20);
-        await interaction.reply(`congrats! you rolled a:${rolledNumber}` );
+        const yesEmbed = new EmbedBuilder()
+            .setColor(0xff0055)
+            .setTitle('You rolled a:')
+            .addFields(
+                { name: ' ', value: rolledNumber.toString(), size: 12, inline: true },
+            )
+            .setTimestamp()
+        await interaction.reply({ embeds: [yesEmbed] });
+
     },
 };
 //Dette er en kode som ruller en "dice" han bare tar et random nummer
