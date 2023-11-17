@@ -15,7 +15,6 @@ module.exports = {
             .setColor(0x3bed09)
             .setTitle('this is your xp')
             .addFields(
-                { name: '\u200B', value: '\u200B' },
                 { name: 'your current xp amount', value: currentxp.toString(), inline: true },
                 { name: 'your current level', value: level.toString(), inline: true },
                 { name: 'This is your xp to level up', value: xptolevelup.toString(), inline: true }
